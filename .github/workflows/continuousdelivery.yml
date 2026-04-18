@@ -21,16 +21,20 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd login-react
+          npm install
 
       - name: Build project
-        run: npm run build
+        run: |
+          cd login-react
+          npm run build
 
       - name: Simulacao continuous delivery
         uses: actions/upload-artifact@v4
         with:
           name: projeto-build
-          path: build/
+          path: login-react/build/
 
 
   deploy:

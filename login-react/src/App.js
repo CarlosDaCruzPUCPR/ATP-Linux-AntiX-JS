@@ -10,7 +10,7 @@ function App() {
   function validarLogin() {
 
     if(email === "eduardo.lino@pucpr.br" && senha === "123456"){
-      setMensagem("Acessado com sucesso!");
+      setMensagem("Acessado com sucesso! Seja bem vindo");
     }
     else{
       setMensagem("Usuário ou senha incorretos!");

@@ -21,10 +21,14 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd login-react
+          npm install
 
       - name: Build project
-        run: npm run build
+        run: |
+          cd login-react
+          npm run build
 
 
   docker:
@@ -40,4 +44,3 @@ jobs:
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-        
