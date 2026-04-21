@@ -19,7 +19,7 @@ jobs:
 
         with:
 
-          webhook: ${{DISCORD}}
+          webhook: ${{secrets.DISCORD}}
 
           template: "avatar-with-link"
 
